@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express();
-
+require("./conn/conn")
 
 app.get("/", (req,res) => {
     res.send("Hello Server.")
