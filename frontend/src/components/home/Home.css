@@ -1,0 +1,35 @@
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.continent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.icon-vertical-adjust {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+.dude {
+    background-color: #7562FF;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    border: none;
+}
