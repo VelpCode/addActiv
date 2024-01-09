@@ -38,7 +38,7 @@ router.put("/updateTask/:id", async (req,res) => {
  
  });
 
- router.delete("/deleteDask/:id"), async (req, res) => {
+ router.delete("/deleteTask/:id", async (req, res) => {
 
     try {
         const { email } = req.body;
@@ -52,6 +52,6 @@ router.put("/updateTask/:id", async (req,res) => {
       console.log(error);
     }
 
- }
+ });
 
 module.exports = router;
