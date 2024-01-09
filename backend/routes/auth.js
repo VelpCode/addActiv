@@ -32,8 +32,8 @@ router.post("/signin", async(req,res) => {
             if(!isPasswordCorrect) {
                 res.status(400).json({ message: "Password is not correct" })
             }
-            const {password, ...others} = users._doc;
-            res.status(400).json({ others });
+            const { password, ...others } = users._doc;
+            res.status(200).json({ others });
         } catch(error) {
           res.status(400).json({ message: "User Already Exists" });
     }
