@@ -54,4 +54,11 @@ router.put("/updateTask/:id", async (req,res) => {
 
  });
 
+ //getTask
+ router.get("/getTasks/:id",async( req, res ) => {
+    const list = await List.find({ user:req.params.id });
+    res.status(200).json({ list });
+ }
+ )
+
 module.exports = router;

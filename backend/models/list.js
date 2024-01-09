@@ -18,4 +18,5 @@ const listSchema = new mongoose.Schema({
 { timestaps: true }
 )
 
+
 module.exports = mongoose.model("List", listSchema)
