@@ -3,6 +3,8 @@ const User = require("../models/user");
 const List = require("../models/list");
 
 router.post("/addTask", async (req,res) => {
+
+   try {
     const { title, body, email } = req.body;
     const existingUser = await User.findOne({ email })
     if (existingUser) {
@@ -11,6 +13,11 @@ router.post("/addTask", async (req,res) => {
         existingUser.list.push(list);
         existingUser.save();
     }
-})
+    
+    }catch (error) {
+        console.log(error)
+    }
+
+});
 
 module.exports = router;
