@@ -11,6 +11,7 @@ app.get("/", (req,res) => {
 })
 
 app.use("/api/v1", auth);
+
 app.listen(1000, () => {
 
     console.log("Server is up.")
