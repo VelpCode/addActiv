@@ -16,4 +16,4 @@ app.listen(1000, () => {
 
     console.log("Server is up.")
 
-})
+});

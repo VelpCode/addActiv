@@ -13,11 +13,8 @@ router.post("/register", async(req,res) => {
         } catch(error) {
             res.status(400).json({ message: "User Already Exists" });
         }
-    
 })
-
 //
-
 router.post("/signin", async(req,res) => {
     try {
         const user = await User.findOne({ email: req.body.email });
