@@ -25,11 +25,17 @@
     top: -2px;
 }
 
-. {
+button {
     background-color: #7562FF;
     padding:10px;
     border-radius: 10px;
     color:white;
     font-weight: bold;
     border: none;
+}
+
+.continent p {
+
+    text-align: center;
+
 }
