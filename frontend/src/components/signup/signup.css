@@ -1,0 +1,29 @@
+
+
+.signup {
+    min-height: 80vh;
+}
+
+
+input {
+    width: stretch;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.signbtn {
+    margin-top: 10px;
+    width: stretch;
+    
+}
+
+.signblock {
+    display: flex;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.infodetails {
+    margin-bottom: 10px;
+}
