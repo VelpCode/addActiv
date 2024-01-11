@@ -5,6 +5,8 @@ import Footer from './components/footer/Footer'
 import About from './components/about/About';
 import Signup from './components/signup/Signup';
 import Signin from './components/signin/Signin';
+import Active from './components/active/Active';
+
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 
@@ -18,6 +20,7 @@ const App = () => {
           <Route path = "/about" element={<About/>}/>
           <Route path = "/signup" element={<Signup/>}/>
           <Route path = "/signin" element={<Signin/>}/>
+          <Route path = "/active" element={<Active/>}/>
         </Routes>
       </Router>
       <Footer />

@@ -8,7 +8,7 @@ const Signup = () => {
     <div className="signup d-flex justify-content-center align-items-center">
         <div className="signblock">
             <div className='block-left'>
-                <h1>Sign Up Now</h1><br></br>
+                <h1>Create Account</h1><br></br>
                 <div className="infodetails">
                 <input type="text" className="text" placeholder='Enter your email' />
             </div>
