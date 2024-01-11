@@ -1,5 +1,6 @@
 import React from 'react'
 import "./about.css"
+import {BrowserRouter as Router} from "react-router-dom"
 
 
 const About = () => {

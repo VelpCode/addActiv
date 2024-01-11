@@ -17,3 +17,25 @@
     width: 50rem;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .aboutsub {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 0 15px; /* Add some padding */
+    }
+
+    .abheading {
+        padding: 0 15px; /* Add some padding */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutsub {
+        width: 100%; /* Use full width for very small screens */
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    .abheading {
+        padding: 0 10px; /* Adjust padding */
+    }
+}
