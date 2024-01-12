@@ -6,7 +6,9 @@ const Active = () => {
   return (
 
     <div className="agdive">
-        
+        <div className="logheader">
+        <h2 className='headingact'>Add <span style={{ color: '#7562FF' }}>∀ctivities</span></h2>
+        </div>
         <div className="actbox">
             <div className="inputinputs">
             <input type="text" className="textbawk" placeholder='Activity Title' />

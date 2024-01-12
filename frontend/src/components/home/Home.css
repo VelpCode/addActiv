@@ -39,3 +39,14 @@ button {
     text-align: center;
 
 }
+
+.dudebutton {
+
+    background-color: #7562FF;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+}

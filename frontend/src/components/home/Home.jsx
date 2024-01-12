@@ -1,6 +1,7 @@
 import React from 'react'
 import "./home.css"
 import { IoAddCircleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
             <h1>Manage the boatload<br></br>of activities on your plate. <br></br></h1>
             <p>Elimate unnessary activies, stay on top of your goals and tasks<br></br>
             with the best activity tracker on the market    .</p>
-            <button class = "dude">Add Activitiy <IoAddCircleOutline size={20} className="icon-vertical-adjust"/></button>
+            <Link to="/active" className="dudebutton">Add Activity <IoAddCircleOutline size={20} className="icon-vertical-adjust"/></Link>
         </div>
     </div>
   )
