@@ -11,6 +11,15 @@
 
 }
 
+#textarea {
+
+    border-radius: 20px;    
+    width: stretch;
+    border: none;
+    padding: 20px;
+    outline: none;
+}
+
 .actbox input {
     border: none;
     outline: none;
