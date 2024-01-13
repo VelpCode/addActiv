@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './active.css';
+import ActivityCards from './ActivityCards';
 
 
 const Active = () => {
@@ -40,11 +41,10 @@ const Active = () => {
         setArray([...Array, Inputs])
         setInputs({ title: "", body: "" });
     }
-    console.log(Array)
-
     return (
         
         <div className="agdive">
+            <div className="addwholesec">
             <div className="logheader">
                 <h2 className='headingact'>Add <span style={{ color: '#7562FF' }}>∀ctivities</span></h2>
             </div>
@@ -55,7 +55,20 @@ const Active = () => {
                 </div>
                 <button className="addbutt" onClick={submit}>Add</button>
             </div>
+            </div>
+            <div className="todo-body">
+            <div className="container fluid">
+                <div className='row'>
+                    {Array && Array.map((item, index) => (
+                        <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
+                            <ActivityCards title={item.title} body={item.body}/>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
+        </div>
+        
     )
 }
 

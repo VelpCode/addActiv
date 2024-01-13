@@ -27,12 +27,23 @@
 }
 
 .agdive {
+    height: 80vh;
+    width: 100%;
+}
+
+
+.todo-card-p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.addwholesec{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    width: 100%;
+    margin-top: 30px;
 }
 
 .addbutt {
@@ -45,4 +56,10 @@
 
 .headingact {
     margin-bottom: 20px;
+}
+
+.activcard {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 10px;
 }
