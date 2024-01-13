@@ -31,8 +31,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 80vh;
+    width: 100%;
 }
 
 .addbutt {
