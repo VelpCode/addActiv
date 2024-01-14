@@ -63,3 +63,17 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     margin: 10px;
 }
+
+.card-icons {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.card-icon-head {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.card-icon-head:hover {
+    transform: scale(1.1);
+}
