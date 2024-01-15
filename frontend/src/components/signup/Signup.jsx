@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./signup.css"
 import Logo from "./dudedraw.png";
+import axios from "axios";
 
 const Signup = () => {
     const [Inputs, setInputs] = useState({
@@ -12,14 +13,17 @@ const Signup = () => {
         const { name, value } = e.target;
         setInputs({ ...Inputs, [name]: value })
     };
-    const submit = (e) => {
+    const submit = async (e) => {
         e.preventDefault();
-        console.log(Inputs);
-        setInputs({
-            email: "", 
-            username:"", 
-            password:"",
+        await axios.post("http://localhost:1000/api/v1/register", Inputs).then((response) => {
+            alert(response.data.message);
+            setInputs({
+                email: "", 
+                username:"", 
+                password:"",
+            });
         });
+        
     }
   return (
 
