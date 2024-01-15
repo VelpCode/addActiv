@@ -15,6 +15,11 @@ const Signup = () => {
     const submit = (e) => {
         e.preventDefault();
         console.log(Inputs);
+        setInputs({
+            email: "", 
+            username:"", 
+            password:"",
+        });
     }
   return (
 
