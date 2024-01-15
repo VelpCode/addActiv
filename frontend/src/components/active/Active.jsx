@@ -3,6 +3,7 @@ import './active.css';
 import ActivityCards from './ActivityCards';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Update from './Update';
 
 
 const Active = () => {
@@ -83,12 +84,15 @@ const Active = () => {
                             <ActivityCards title={item.title} body={item.body} id={index} del = { del }/>
                         </div>
                     ))}
+                    
                 </div>
+                
             </div>
+            
         </div>
         </div>
         
-    )
+    );
 }
 
 export default Active;
