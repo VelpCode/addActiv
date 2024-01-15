@@ -40,9 +40,17 @@ const Active = () => {
     }, []);
 
     const submit = () => {
-        setArray([...Array, Inputs])
-        setInputs({ title: "", body: "" });
-        toast.dark('Activity Added')
+
+        if(Inputs.title === "" || Inputs.body === "") {
+            toast.error('Enter activity Text!')
+
+        } else {
+            setArray([...Array, Inputs])
+            setInputs({ title: "", body: "" });
+            toast.dark('Activity Added')
+            toast.error('Your toast is not saved, please signup.')
+        }
+        
     }
 
     const del = (id) => {
