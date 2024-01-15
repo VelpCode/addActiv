@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import "./signup.css"
 import Logo from "./dudedraw.png";
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
+
 
 const Signup = () => {
+    const history = useNavigate();
     const [Inputs, setInputs] = useState({
         email: "", 
         username:"", 
@@ -25,6 +28,7 @@ const Signup = () => {
                     username:"", 
                     password:"",
                 });
+                history("/signin");
             }
             
         });
