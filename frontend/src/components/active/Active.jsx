@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './active.css';
 import ActivityCards from './ActivityCards';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Active = () => {
@@ -40,10 +42,19 @@ const Active = () => {
     const submit = () => {
         setArray([...Array, Inputs])
         setInputs({ title: "", body: "" });
+        toast.dark('Activity Added')
     }
+
+    const del = (id) => {
+        const newArray = Array.filter((_, index) => index !== id);
+        setArray(newArray);
+        toast.error('Activity Deleted')
+    }
+
     return (
         
         <div className="agdive">
+            <ToastContainer />
             <div className="addwholesec">
             <div className="logheader">
                 <h2 className='headingact'>Add <span style={{ color: '#7562FF' }}>∀ctivities</span></h2>
@@ -61,7 +72,7 @@ const Active = () => {
                 <div className='row'>
                     {Array && Array.map((item, index) => (
                         <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
-                            <ActivityCards title={item.title} body={item.body}/>
+                            <ActivityCards title={item.title} body={item.body} id={index} del = { del }/>
                         </div>
                     ))}
                 </div>

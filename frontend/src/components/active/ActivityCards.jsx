@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillDelete } from "react-icons/ai"
 import { TiUpload } from "react-icons/ti";
 
-const ActivityCards = ({title, body}) => {
+const ActivityCards = ({ title, body, id, del }) => {
   return (
     <div className='p-3 mx-4 activcard'>
         <div>
@@ -13,8 +13,10 @@ const ActivityCards = ({title, body}) => {
           <div>
               <TiUpload className='card-icon-head' /> Update
           </div>
-          <div>
-              <AiFillDelete className='card-icon-head'/> Delete
+          <div
+          onClick={() => {
+            del(id)}}>
+              <AiFillDelete className='card-icon-head' /> Delete
           </div>
         </div>
     </div>
