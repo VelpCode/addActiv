@@ -18,7 +18,10 @@ const Signin = () => {
         await axios
         .post("http://localhost:1000/api/v1/signin", Inputs)
         .then((response) => {
-            console.log(alert(response.data));
+            console.log(alert(response.data)).catch(error => {
+                console.error(error.response);
+                alert(error.response.data.message); // Displaying the error message from server
+            });
         });
     }
 
